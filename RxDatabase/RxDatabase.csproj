@@ -213,6 +213,18 @@
       <id>065ee311-0ed5-4d08-b4b9-01e82ffb6c6a</id>
       <BoundTo>e8bd9d32-80fd-436b-ba5a-a879542f806f</BoundTo>
     </Compile>
+    <Compile Include="DeleteEntries.cs">
+      <BoundTo>64cfd2c6-4e57-4226-abb0-7a3cfaf10a35</BoundTo>
+      <DependentUpon>DeleteEntries.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c2769371-f2b6-465a-bcc1-57f774ab74cc</id>
+    </Compile>
+    <Compile Include="DeleteEntries.UserCode.cs">
+      <BoundTo>64cfd2c6-4e57-4226-abb0-7a3cfaf10a35</BoundTo>
+      <DependentUpon>DeleteEntries.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dcc9cfb5-125c-4fa2-8efc-402438693830</id>
+    </Compile>
     <Compile Include="NavigateToDBTab.cs">
       <BoundTo>fe5fa00b-ac32-4ff1-8d25-37672f60d4b7</BoundTo>
       <DependentUpon>NavigateToDBTab.rxrec</DependentUpon>
@@ -290,6 +302,11 @@
       <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
       <id>e8bd9d32-80fd-436b-ba5a-a879542f806f</id>
       <recordtableid>2fe8733a-8279-476f-ae38-29c33f509051</recordtableid>
+    </None>
+    <None Include="DeleteEntries.rxrec">
+      <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
+      <id>64cfd2c6-4e57-4226-abb0-7a3cfaf10a35</id>
+      <recordtableid>5885685c-f31a-43d4-b5b4-3293b215506a</recordtableid>
     </None>
     <None Include="NavigateToDBTab.rxrec">
       <BoundTo>d8b2296f-0b86-4556-b970-92464483c6d9</BoundTo>
