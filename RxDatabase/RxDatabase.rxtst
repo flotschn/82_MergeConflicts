@@ -35,7 +35,7 @@ rxversion="8.2">
 			<testcase
 			datasource="Persons"
 			id="7525d549-8f80-41d9-90e0-561ef4743757"
-			name="DB_Test">
+			name="Database_-_Simple_Test">
 			</testcase>
 			<testmodule
 			id="878eca9f-c2fa-4b6e-b5eb-c8036c3d4b63"
@@ -124,7 +124,7 @@ rxversion="8.2">
 				name="RxDatabase">
 					<testcase
 					id="7525d549-8f80-41d9-90e0-561ef4743757"
-					name="DB_Test">
+					name="Database_-_Simple_Test">
 						<setup
 						id="f27e9096-f7b4-4a7e-beae-8a7376c65065"
 						name="setup">
