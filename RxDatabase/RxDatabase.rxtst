@@ -11,6 +11,10 @@ rxversion="8.2">
 			id="299878a3-7ccd-4619-af00-e99cdfc7e20b"
 			name="teardown1">
 			</teardown>
+			<testcase
+			id="43f9f758-9737-4d83-955d-34c9522eaabe"
+			name="Extended_Database_Test">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -84,6 +88,10 @@ rxversion="8.2">
 			ref="d6149e74-6188-4a99-a4b7-c9e207c46a15"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="9b7d66e0-9d33-441a-8bd8-95fa9b25a6a5"
+			name="Placeholder_Test">
+			</testcase>
 			<testmodule
 			id="b23d334e-1483-49c1-a647-ac3e19855068"
 			name="ExitAUT"
@@ -161,6 +169,10 @@ rxversion="8.2">
 								</testmodule>
 							</teardown>
 						</testcase>
+						<testcase
+						id="43f9f758-9737-4d83-955d-34c9522eaabe"
+						name="Extended_Database_Test">
+						</testcase>
 					</smartfoldernode>
 					<smartfoldernode
 					id="ea352ab0-46d9-4f6a-81c0-6f07a2ae50f2"
@@ -188,6 +200,10 @@ rxversion="8.2">
 								name="ExitAUT">
 								</testmodule>
 							</teardown>
+						</testcase>
+						<testcase
+						id="9b7d66e0-9d33-441a-8bd8-95fa9b25a6a5"
+						name="Placeholder_Test">
 						</testcase>
 					</smartfoldernode>
 				</testcase>
