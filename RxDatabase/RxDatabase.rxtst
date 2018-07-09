@@ -35,11 +35,7 @@ rxversion="8.2">
 			<testcase
 			datasource="Persons"
 			id="7525d549-8f80-41d9-90e0-561ef4743757"
-			name="Database_-_Simple_Test">
-			</testcase>
-			<testcase
-			id="83c8f114-8e89-4e50-9b86-a23b506de04e"
-			name="Remove_Entries">
+			name="DB_Test">
 			</testcase>
 			<testmodule
 			id="878eca9f-c2fa-4b6e-b5eb-c8036c3d4b63"
@@ -90,10 +86,6 @@ rxversion="8.2">
 			ref="4daaf4cc-f096-4533-a5ec-29625bb0b3fc"
 			type="Recording">
 			</testmodule>
-			<smartfoldernode
-			id="c19d6fdc-c509-4e32-852b-318f5e2a45b9"
-			name="Database_Tests">
-			</smartfoldernode>
 			<testcase
 			id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce"
 			name="Upload-Test">
@@ -118,16 +110,6 @@ rxversion="8.2">
 			id="ea59d7b0-6a1c-45dc-987e-92692632122a"
 			name="setup1">
 			</setup>
-			<testcase
-			id="eb64bdaa-4c8e-48d8-b85c-d7941cd41b35"
-			name="Extended_Test">
-			</testcase>
-			<testmodule
-			id="f0fa5af3-2efb-4cf2-a0aa-3c71f3605108"
-			name="DeleteEntries"
-			ref="5885685c-f31a-43d4-b5b4-3293b215506a"
-			type="Recording">
-			</testmodule>
 			<setup
 			id="f27e9096-f7b4-4a7e-beae-8a7376c65065"
 			name="setup">
@@ -142,48 +124,32 @@ rxversion="8.2">
 				name="RxDatabase">
 					<testcase
 					id="7525d549-8f80-41d9-90e0-561ef4743757"
-					name="Database_-_Simple_Test">
+					name="DB_Test">
 						<setup
 						id="f27e9096-f7b4-4a7e-beae-8a7376c65065"
 						name="setup">
 							<testmodule
-							id="f0fa5af3-2efb-4cf2-a0aa-3c71f3605108"
-							name="DeleteEntries">
+							id="dfc8f1a5-88e3-421c-8e6a-528a7004f846"
+							name="StartAUT">
 							</testmodule>
-						</testcase>
-						<testcase
-						id="7525d549-8f80-41d9-90e0-561ef4743757"
-						name="Simple_Test">
-							<setup
-							id="f27e9096-f7b4-4a7e-beae-8a7376c65065"
-							name="setup">
-								<testmodule
-								id="dfc8f1a5-88e3-421c-8e6a-528a7004f846"
-								name="StartAUT">
-								</testmodule>
-							</setup>
-							<modulegroup
-							id="8b5fdfb7-66ad-429b-8932-6f0f098f9b2f"
-							name="EnterData">
-							</modulegroup>
+						</setup>
+						<modulegroup
+						id="8b5fdfb7-66ad-429b-8932-6f0f098f9b2f"
+						name="EnterData">
+						</modulegroup>
+						<testmodule
+						id="dc67e71d-0148-4939-b64a-db44a622f812"
+						name="ValidateEntries">
+						</testmodule>
+						<teardown
+						id="dbf4f3e3-66a4-45f5-b48d-fbd742d3b63f"
+						name="teardown">
 							<testmodule
-							id="dc67e71d-0148-4939-b64a-db44a622f812"
-							name="ValidateEntries">
+							id="b23d334e-1483-49c1-a647-ac3e19855068"
+							name="ExitAUT">
 							</testmodule>
-							<teardown
-							id="dbf4f3e3-66a4-45f5-b48d-fbd742d3b63f"
-							name="teardown">
-								<testmodule
-								id="b23d334e-1483-49c1-a647-ac3e19855068"
-								name="ExitAUT">
-								</testmodule>
-							</teardown>
-						</testcase>
-						<testcase
-						id="eb64bdaa-4c8e-48d8-b85c-d7941cd41b35"
-						name="Extended_Test">
-						</testcase>
-					</smartfoldernode>
+						</teardown>
+					</testcase>
 					<testcase
 					id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce"
 					name="Upload-Test">
@@ -251,16 +217,7 @@ rxversion="8.2">
 			id="7525d549-8f80-41d9-90e0-561ef4743757">
 			</testcontainer>
 			<testcontainer
-			id="83c8f114-8e89-4e50-9b86-a23b506de04e">
-			</testcontainer>
-			<testcontainer
-			id="c19d6fdc-c509-4e32-852b-318f5e2a45b9">
-			</testcontainer>
-			<testcontainer
 			id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce">
-			</testcontainer>
-			<testcontainer
-			id="eb64bdaa-4c8e-48d8-b85c-d7941cd41b35">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
