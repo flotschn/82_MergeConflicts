@@ -3,10 +3,18 @@
 rxversion="8.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<smartfoldernode
+			id="22b2d8d3-d2ce-4a14-8916-a7eb70d5b93a"
+			name="Database">
+			</smartfoldernode>
 			<teardown
 			id="299878a3-7ccd-4619-af00-e99cdfc7e20b"
 			name="teardown1">
 			</teardown>
+			<testcase
+			id="43f9f758-9737-4d83-955d-34c9522eaabe"
+			name="Extended_Database_Test">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -33,9 +41,9 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testcase
-			datasource="Persons"
+			datasource="SimpleDBTest_Persons"
 			id="7525d549-8f80-41d9-90e0-561ef4743757"
-			name="DB_Test">
+			name="Simple_Database_Test">
 			</testcase>
 			<testmodule
 			id="878eca9f-c2fa-4b6e-b5eb-c8036c3d4b63"
@@ -80,6 +88,10 @@ rxversion="8.2">
 			ref="d6149e74-6188-4a99-a4b7-c9e207c46a15"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="9b7d66e0-9d33-441a-8bd8-95fa9b25a6a5"
+			name="Placeholder_Test">
+			</testcase>
 			<testmodule
 			id="b23d334e-1483-49c1-a647-ac3e19855068"
 			name="ExitAUT"
@@ -88,7 +100,7 @@ rxversion="8.2">
 			</testmodule>
 			<testcase
 			id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce"
-			name="Upload-Test">
+			name="Simple_Upload_Test">
 			</testcase>
 			<teardown
 			id="dbf4f3e3-66a4-45f5-b48d-fbd742d3b63f"
@@ -106,6 +118,10 @@ rxversion="8.2">
 			ref="d6149e74-6188-4a99-a4b7-c9e207c46a15"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="ea352ab0-46d9-4f6a-81c0-6f07a2ae50f2"
+			name="Upload">
+			</smartfoldernode>
 			<setup
 			id="ea59d7b0-6a1c-45dc-987e-92692632122a"
 			name="setup1">
@@ -122,58 +138,74 @@ rxversion="8.2">
 				<testcase
 				id="6b3c6292-2d47-49df-82b4-4011f6e0b1fc"
 				name="RxDatabase">
-					<testcase
-					id="7525d549-8f80-41d9-90e0-561ef4743757"
-					name="DB_Test">
-						<setup
-						id="f27e9096-f7b4-4a7e-beae-8a7376c65065"
-						name="setup">
+					<smartfoldernode
+					id="22b2d8d3-d2ce-4a14-8916-a7eb70d5b93a"
+					name="Database">
+						<testcase
+						id="7525d549-8f80-41d9-90e0-561ef4743757"
+						name="Simple_Database_Test">
+							<setup
+							id="f27e9096-f7b4-4a7e-beae-8a7376c65065"
+							name="setup">
+								<testmodule
+								id="dfc8f1a5-88e3-421c-8e6a-528a7004f846"
+								name="StartAUT">
+								</testmodule>
+							</setup>
+							<modulegroup
+							id="8b5fdfb7-66ad-429b-8932-6f0f098f9b2f"
+							name="EnterData">
+							</modulegroup>
 							<testmodule
-							id="dfc8f1a5-88e3-421c-8e6a-528a7004f846"
-							name="StartAUT">
+							id="dc67e71d-0148-4939-b64a-db44a622f812"
+							name="ValidateEntries">
 							</testmodule>
-						</setup>
-						<modulegroup
-						id="8b5fdfb7-66ad-429b-8932-6f0f098f9b2f"
-						name="EnterData">
-						</modulegroup>
-						<testmodule
-						id="dc67e71d-0148-4939-b64a-db44a622f812"
-						name="ValidateEntries">
-						</testmodule>
-						<teardown
-						id="dbf4f3e3-66a4-45f5-b48d-fbd742d3b63f"
-						name="teardown">
+							<teardown
+							id="dbf4f3e3-66a4-45f5-b48d-fbd742d3b63f"
+							name="teardown">
+								<testmodule
+								id="b23d334e-1483-49c1-a647-ac3e19855068"
+								name="ExitAUT">
+								</testmodule>
+							</teardown>
+						</testcase>
+						<testcase
+						id="43f9f758-9737-4d83-955d-34c9522eaabe"
+						name="Extended_Database_Test">
+						</testcase>
+					</smartfoldernode>
+					<smartfoldernode
+					id="ea352ab0-46d9-4f6a-81c0-6f07a2ae50f2"
+					name="Upload">
+						<testcase
+						id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce"
+						name="Simple_Upload_Test">
+							<setup
+							id="ea59d7b0-6a1c-45dc-987e-92692632122a"
+							name="setup1">
+								<testmodule
+								id="90de35f1-e17a-457c-8b18-e4af1b952672"
+								name="StartAUT">
+								</testmodule>
+							</setup>
 							<testmodule
-							id="b23d334e-1483-49c1-a647-ac3e19855068"
-							name="ExitAUT">
+							id="6dd77b6d-6a69-4468-8967-73da3b4ca8be"
+							name="Uploading">
 							</testmodule>
-						</teardown>
-					</testcase>
-					<testcase
-					id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce"
-					name="Upload-Test">
-						<setup
-						id="ea59d7b0-6a1c-45dc-987e-92692632122a"
-						name="setup1">
-							<testmodule
-							id="90de35f1-e17a-457c-8b18-e4af1b952672"
-							name="StartAUT">
-							</testmodule>
-						</setup>
-						<testmodule
-						id="6dd77b6d-6a69-4468-8967-73da3b4ca8be"
-						name="Uploading">
-						</testmodule>
-						<teardown
-						id="299878a3-7ccd-4619-af00-e99cdfc7e20b"
-						name="teardown1">
-							<testmodule
-							id="878eca9f-c2fa-4b6e-b5eb-c8036c3d4b63"
-							name="ExitAUT">
-							</testmodule>
-						</teardown>
-					</testcase>
+							<teardown
+							id="299878a3-7ccd-4619-af00-e99cdfc7e20b"
+							name="teardown1">
+								<testmodule
+								id="878eca9f-c2fa-4b6e-b5eb-c8036c3d4b63"
+								name="ExitAUT">
+								</testmodule>
+							</teardown>
+						</testcase>
+						<testcase
+						id="9b7d66e0-9d33-441a-8bd8-95fa9b25a6a5"
+						name="Placeholder_Test">
+						</testcase>
+					</smartfoldernode>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -184,7 +216,7 @@ rxversion="8.2">
 		id="90e63a2f-4a22-4a6a-b9ff-e3de10538ae9"
 		includefile="Checked"
 		lastknownrowcount="1"
-		name="Persons"
+		name="SimpleDBTest_Persons"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Sheet1"
 		worksheetrange="Auto-Range">
@@ -211,6 +243,9 @@ rxversion="8.2">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="22b2d8d3-d2ce-4a14-8916-a7eb70d5b93a">
+			</testcontainer>
+			<testcontainer
 			id="6b3c6292-2d47-49df-82b4-4011f6e0b1fc">
 			</testcontainer>
 			<testcontainer
@@ -218,6 +253,9 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="dbc2ed95-72a8-459d-a260-4938d0a6e9ce">
+			</testcontainer>
+			<testcontainer
+			id="ea352ab0-46d9-4f6a-81c0-6f07a2ae50f2">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
